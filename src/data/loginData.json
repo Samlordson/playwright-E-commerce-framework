@@ -1,0 +1,32 @@
+[
+    {
+        "scenario": "Valid Login",
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "expected": "success"
+    },
+    {
+        "scenario": "Invalid Password",
+        "username": "standard_user",
+        "password": "wrong_password",
+        "expected": "failure"
+    },
+    {
+        "scenario": "Invalid Username",
+        "username": "wrong_user",
+        "password": "secret_sauce",
+        "expected": "failure"
+    },
+    {
+        "scenario": "Blank Username",
+        "username": "",
+        "password": "secret_sauce",
+        "expected": "failure"
+    },
+    {
+        "scenario": "Blank Password",
+        "username": "standard_user",
+        "password": "",
+        "expected": "failure"
+    }
+]
