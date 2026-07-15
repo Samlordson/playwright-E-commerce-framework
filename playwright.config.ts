@@ -7,7 +7,7 @@ export default defineConfig({
 
   testDir: "./tests",
 
-  fullyParallel: true,
+  fullyParallel: false,
 
   forbidOnly: !!process.env.CI,
 
