@@ -4,7 +4,7 @@ import { DataProvider } from "../../src/utils/DataProvider";
 import { LoginPage } from "../../src/pages/LoginPage";
 import { LoginData } from "../../src/models/LoginData";
 import { Logger } from "../../src/utils/Logger";
-
+import "../../src/hooks/ReportingHooks";
 
 const config = ConfigReader.getConfig();
 

@@ -1,0 +1,14 @@
+[INFO] 6:59:47 pm - ========== Add Product Test Started ==========
+[SUCCESS] 6:59:47 pm - Inventory Page verified
+[SUCCESS] 6:59:47 pm - Inventory Page opened
+[SUCCESS] 6:59:47 pm - Inventory Page verified
+[INFO] 6:59:47 pm - Adding product : Sauce Labs Backpack
+[SUCCESS] 6:59:47 pm - Sauce Labs Backpack added to cart
+[INFO] 6:59:47 pm - Verifying cart count (1)
+[SUCCESS] 6:59:47 pm - Cart count verified
+[INFO] 6:59:47 pm - Opening Cart
+[SUCCESS] 6:59:48 pm - Cart opened
+[INFO] 6:59:48 pm - Verify Cart Page
+[SUCCESS] 6:59:48 pm - Cart Page is Displaying
+[INFO] 6:59:48 pm - Verify Product
+[INFO] 6:59:48 pm - Verified Product Name Sucessfully

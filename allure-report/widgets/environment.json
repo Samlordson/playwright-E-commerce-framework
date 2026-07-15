@@ -1,1 +1,1 @@
-[]
+[{"values":["SauceDemo"],"name":"Application"},{"values":["QA"],"name":"Environment"},{"values":["Chromium"],"name":"Browser"},{"values":["Playwright"],"name":"Framework"},{"values":["TypeScript"],"name":"Language"},{"values":["22"],"name":"NodeJS"},{"values":["Windows 11"],"name":"OS"},{"values":["Samlordson"],"name":"Author"}]

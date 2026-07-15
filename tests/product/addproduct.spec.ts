@@ -1,6 +1,8 @@
 import { test } from "../../src/fixtures/basefixture";
 import { Logger } from "../../src/utils/Logger";
-
+import * as allure from "allure-js-commons";
+import "../../src/hooks/ReportingHooks";
+import { expect } from "playwright/test";
 
 test("Add product to cart", async ({
 
@@ -9,6 +11,11 @@ test("Add product to cart", async ({
     cartPage
 
 }) => {
+     await allure.owner("Sam");
+    await allure.severity("critical");
+    await allure.epic("E-Commerce");
+    await allure.feature("Shopping Cart");
+    await allure.story("Add Product to Cart");
 
    Logger.info("========== Add Product Test Started ==========");
 
@@ -26,6 +33,9 @@ test("Add product to cart", async ({
     await cartPage.verifyCartPage();
 
     await cartPage.verifyProduct("Sauce Labs Backpack");
+
+
+    await expect(page).toHaveURL(/wrongurl/);
 
    Logger.success("========== Add Product Test Passed ==========");
 

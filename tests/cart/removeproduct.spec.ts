@@ -1,6 +1,7 @@
 import { expect } from "@playwright/test";
 import { test } from "../../src/fixtures/basefixture";
 import { Logger } from "../../src/utils/Logger";
+import "../../src/hooks/ReportingHooks";
 
 test("Remove Product", async ({
 
@@ -9,7 +10,7 @@ test("Remove Product", async ({
     cartPage
 
 }) => {
-    
+
 Logger.info("========== Remove Product Test Started ==========");
     await page.goto("/inventory.html");
 

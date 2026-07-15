@@ -1,6 +1,7 @@
 import { expect } from "@playwright/test";
 import { test } from "../../src/fixtures/basefixture";
 import { Logger } from "../../src/utils/Logger";
+import "../../src/hooks/ReportingHooks";
 
 
 test("Logout Successfully", async ({

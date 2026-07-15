@@ -2,6 +2,7 @@ import { test as setup, expect } from "@playwright/test";
 import { LoginPage } from "../../src/pages/LoginPage";
 import { ConfigReader } from "../../src/utils/ConfigReader";
 import { Logger } from "../../src/utils/Logger";
+import "../../src/hooks/ReportingHooks";
 
 const config = ConfigReader.getConfig();
 

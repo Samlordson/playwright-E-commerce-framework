@@ -1,0 +1,4 @@
+[INFO] 6:59:45 pm - ========== Autenticate User setup started ==========
+[INFO] 6:59:45 pm - Logging in as 'standard_user'
+[SUCCESS] 6:59:45 pm - Login completed
+[SUCCESS] 6:59:45 pm - ========== Authenticated the user and the Saved Storage State Sucessfully==========

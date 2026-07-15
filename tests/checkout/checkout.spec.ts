@@ -2,6 +2,7 @@ import { test } from "../../src/fixtures/basefixture";
 import { DataProvider} from "../../src/utils/DataProvider";
 import { CheckoutData} from "../../src/models/CheckoutData";
 import { Logger } from "../../src/utils/Logger";
+import "../../src/hooks/ReportingHooks";
 
 test("Complete Checkout", async ({
 

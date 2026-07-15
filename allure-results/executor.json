@@ -1,0 +1,10 @@
+{
+  "name": "GitHub Actions",
+  "type": "github",
+  "url": "https://github.com/Samlordson/playwright-E-commerce-framework/actions",
+  "buildOrder": 1,
+  "buildName": "Playwright Automation",
+  "buildUrl": "https://github.com/Samlordson/playwright-E-commerce-framework/actions",
+  "reportUrl": "https://github.com/Samlordson/playwright-E-commerce-framework",
+  "reportName": "Playwright Automation Report"
+}
