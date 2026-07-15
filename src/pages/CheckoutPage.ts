@@ -1,5 +1,6 @@
 import { Locator, Page } from "@playwright/test";
 import { BasePage } from "./BasePage";
+import { Logger } from "../utils/Logger";
 
 export class CheckoutPage extends BasePage {
 
@@ -30,7 +31,7 @@ export class CheckoutPage extends BasePage {
         await this.postalCode.fill(zip);
 
         await this.continueButton.click();
-
+      Logger.success("Entered Customer Detail");
     }
 
 }

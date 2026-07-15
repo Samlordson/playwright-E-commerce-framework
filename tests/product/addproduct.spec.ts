@@ -1,4 +1,6 @@
 import { test } from "../../src/fixtures/basefixture";
+import { Logger } from "../../src/utils/Logger";
+
 
 test("Add product to cart", async ({
 
@@ -7,6 +9,9 @@ test("Add product to cart", async ({
     cartPage
 
 }) => {
+
+   Logger.info("========== Add Product Test Started ==========");
+
 
    await productPage.openInventory();
 
@@ -21,5 +26,7 @@ test("Add product to cart", async ({
     await cartPage.verifyCartPage();
 
     await cartPage.verifyProduct("Sauce Labs Backpack");
+
+   Logger.success("========== Add Product Test Passed ==========");
 
 });

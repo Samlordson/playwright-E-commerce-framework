@@ -1,6 +1,7 @@
 import { test } from "../../src/fixtures/basefixture";
 import { DataProvider} from "../../src/utils/DataProvider";
 import { CheckoutData} from "../../src/models/CheckoutData";
+import { Logger } from "../../src/utils/Logger";
 
 test("Complete Checkout", async ({
 
@@ -12,6 +13,7 @@ test("Complete Checkout", async ({
     checkoutCompletePage
 
 }) => {
+ Logger.info("========== Checkout Test Started ==========");
 
     await productPage.openInventory();
 
@@ -39,5 +41,7 @@ await checkoutPage.enterCustomerDetails(
     await checkoutoverviewPage.finishOrder();
 
     await checkoutCompletePage.verifyOrderPlaced();
+
+    Logger.success("========== Checkout Test Passed ==========");
 
 });

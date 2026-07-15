@@ -1,5 +1,6 @@
 import { expect, Locator, Page } from "@playwright/test";
 import { BasePage } from "./BasePage"; 
+import { Logger } from "../utils/Logger";
 
 export class CheckoutCompletePage extends BasePage {
 
@@ -17,12 +18,14 @@ export class CheckoutCompletePage extends BasePage {
     }
 
     async verifyOrderPlaced() {
-
+      Logger.info("Verify Placed order");
         await expect(this.title)
             .toHaveText("Checkout: Complete!");
 
         await expect(this.successMessage)
             .toHaveText("Thank you for your order!");
+
+            Logger.success("Order Placed Sucessfully");
 
     }
 

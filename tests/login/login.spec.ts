@@ -3,6 +3,8 @@ import { ConfigReader } from "../../src/utils/ConfigReader";
 import { DataProvider } from "../../src/utils/DataProvider";
 import { LoginPage } from "../../src/pages/LoginPage";
 import { LoginData } from "../../src/models/LoginData";
+import { Logger } from "../../src/utils/Logger";
+
 
 const config = ConfigReader.getConfig();
 
@@ -14,6 +16,8 @@ test.describe("Login Module", () => {
     for (const data of loginData) {
 
         test(data.scenario, async ({ page, loginPage }) => {
+
+       Logger.info("========== Login Test Started ==========");
 
             await page.goto(config.baseUrl);
 
@@ -27,6 +31,8 @@ test.describe("Login Module", () => {
             if (data.expected === "success") {
 
                 await expect(page).toHaveURL(/inventory/);
+
+               Logger.success("========== Login Test Passed ==========");
 
             } else {
 
