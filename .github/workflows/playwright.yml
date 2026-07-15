@@ -1,32 +1,33 @@
-name: Playwright E2E Tests
+name: Playwright Automation Tests
 
 on:
   push:
     branches:
-      - master
       - main
 
   pull_request:
     branches:
-      - master
       - main
 
-jobs:
-  playwright-tests:
+  workflow_dispatch:
 
-    timeout-minutes: 60
+jobs:
+
+  test:
 
     runs-on: ubuntu-latest
+
+    timeout-minutes: 30
 
     steps:
 
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 20
 
       - name: Install Dependencies
         run: npm ci
@@ -34,14 +35,14 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Run Playwright Tests
+      - name: Run Tests
         run: npx playwright test
 
       - name: Upload HTML Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-report
+          name: playwright-html-report
           path: playwright-report/
 
       - name: Upload Allure Results
