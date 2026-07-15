@@ -3,9 +3,15 @@ pipeline {
 
     stages {
 
+        stage('Checkout Code') {
+            steps {
+                checkout scm
+            }
+        }
+
         stage('Install Dependencies') {
             steps {
-                bat 'npm install'
+                bat 'npm ci'
             }
         }
 
@@ -17,15 +23,9 @@ pipeline {
 
         stage('Check Internet') {
             steps {
-                bat 'ping www.saucedemo.com'
                 bat 'curl https://www.saucedemo.com'
             }
         }
-        stage('Open Chromium') {
-    steps {
-        bat 'npx playwright open https://www.saucedemo.com'
-    }
-}
 
         stage('Run Playwright Tests') {
             steps {
@@ -38,6 +38,22 @@ pipeline {
                 bat 'allure generate allure-results --clean -o allure-report'
             }
         }
+    }
 
+    post {
+
+        always {
+            archiveArtifacts artifacts: 'playwright-report/**', fingerprint: true
+            archiveArtifacts artifacts: 'allure-report/**', fingerprint: true
+            archiveArtifacts artifacts: 'test-results/**', fingerprint: true
+        }
+
+        success {
+            echo 'Playwright Tests Passed!'
+        }
+
+        failure {
+            echo 'Playwright Tests Failed!'
+        }
     }
 }
