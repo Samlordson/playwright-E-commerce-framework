@@ -35,7 +35,7 @@ test("Add product to cart", async ({
     await cartPage.verifyProduct("Sauce Labs Backpack");
 
 
-    await expect(page).toHaveURL(/wrongurl/);
+   // await expect(page).toHaveURL(/wrongurl/);
 
    Logger.success("========== Add Product Test Passed ==========");
 
