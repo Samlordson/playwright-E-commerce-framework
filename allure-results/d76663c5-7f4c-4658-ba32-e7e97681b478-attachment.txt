@@ -1,0 +1,3 @@
+[INFO] 8:21:39 pm - ========== Login Test Started ==========
+[INFO] 8:21:59 pm - Logging in as 'standard_user'
+[SUCCESS] 8:21:59 pm - Login completed

@@ -1,0 +1,16 @@
+[INFO] 8:21:29 pm - ========== Checkout Test Started ==========
+[SUCCESS] 8:21:39 pm - Inventory Page verified
+[SUCCESS] 8:21:39 pm - Inventory Page opened
+[INFO] 8:21:39 pm - Adding product : Sauce Labs Backpack
+[SUCCESS] 8:21:39 pm - Sauce Labs Backpack added to cart
+[INFO] 8:21:39 pm - Opening Cart
+[SUCCESS] 8:21:39 pm - Cart opened
+[INFO] 8:21:39 pm - proceedToCheckout
+[SUCCESS] 8:21:39 pm - Checkedout Sucessfully
+[SUCCESS] 8:21:40 pm - Entered Customer Detail
+[INFO] 8:21:40 pm - Verifying Overview Page
+[SUCCESS] 8:21:40 pm - Overview is Displaying
+[SUCCESS] 8:21:40 pm - finished order sucessfully
+[INFO] 8:21:40 pm - Verify Placed order
+[SUCCESS] 8:21:40 pm - Order Placed Sucessfully
+[SUCCESS] 8:21:40 pm - ========== Checkout Test Passed ==========

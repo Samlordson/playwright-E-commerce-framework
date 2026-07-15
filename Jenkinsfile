@@ -26,7 +26,13 @@ pipeline {
                 bat 'npx playwright test'
             }
         }
-
+        
+stage('Check Internet') {
+    steps {
+        bat 'ping www.saucedemo.com'
+        bat 'curl https://www.saucedemo.com'
+    }
+}
         stage('Generate Allure Report') {
             steps {
                 bat 'allure generate allure-results --clean -o allure-report'

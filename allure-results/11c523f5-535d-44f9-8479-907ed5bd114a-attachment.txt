@@ -1,0 +1,4 @@
+[INFO] 8:21:41 pm - ========== Logout Test Started ==========
+[SUCCESS] 8:21:42 pm - Inventory Page verified
+[SUCCESS] 8:21:42 pm - Inventory Page opened
+[SUCCESS] 8:21:43 pm - ========== Logout Test Passed ==========

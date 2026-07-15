@@ -1,0 +1,10 @@
+[INFO] 8:21:43 pm - ========== Remove Product Test Started ==========
+[INFO] 8:21:44 pm - Adding product : Sauce Labs Backpack
+[SUCCESS] 8:21:45 pm - Sauce Labs Backpack added to cart
+[INFO] 8:21:45 pm - Opening Cart
+[SUCCESS] 8:21:45 pm - Cart opened
+[INFO] 8:21:45 pm - Remove Product
+[SUCCESS] 8:21:45 pm - Removed the Product
+[INFO] 8:21:45 pm - Verifying the Cart is Empty
+[SUCCESS] 8:21:45 pm - Cart is empty 
+[SUCCESS] 8:21:45 pm - ========== Remove product Test Passed ==========

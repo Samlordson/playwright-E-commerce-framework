@@ -1,0 +1,11 @@
+[INFO] 8:21:34 pm - ========== Continue Shopping Test Started ==========
+[SUCCESS] 8:21:35 pm - Inventory Page verified
+[SUCCESS] 8:21:35 pm - Inventory Page opened
+[INFO] 8:21:35 pm - Adding product : Sauce Labs Backpack
+[SUCCESS] 8:21:35 pm - Sauce Labs Backpack added to cart
+[INFO] 8:21:35 pm - Opening Cart
+[SUCCESS] 8:21:35 pm - Cart opened
+[INFO] 8:21:35 pm - Continuing Shopping
+[SUCCESS] 8:21:35 pm - Returned to Inventory
+[SUCCESS] 8:21:35 pm - Inventory Page verified
+[SUCCESS] 8:21:35 pm - ========== Continue Shopping Test Passed ==========
