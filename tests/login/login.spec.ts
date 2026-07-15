@@ -39,7 +39,7 @@ test.describe("Login Module", () => {
                 await expect(
                     await loginPage.getErrorMessage()
                 ).not.toBe("");
-
+              Logger.error("========== Checkout Test failed ==========");
             }
 
         });

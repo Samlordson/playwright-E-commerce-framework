@@ -1,5 +1,6 @@
 import { expect } from "@playwright/test";
 import { test } from "../../src/fixtures/basefixture";
+import { Logger } from "../../src/utils/Logger";
 
 test("Remove Product", async ({
 
@@ -8,7 +9,8 @@ test("Remove Product", async ({
     cartPage
 
 }) => {
-
+    
+Logger.info("========== Remove Product Test Started ==========");
     await page.goto("/inventory.html");
 
     await productPage.addProduct("Sauce Labs Backpack");
@@ -18,5 +20,7 @@ test("Remove Product", async ({
     await cartPage.removeProduct();
 
     await cartPage.verifyCartIsEmpty();
+
+    Logger.success("========== Remove product Test Passed ==========");
 
 });
