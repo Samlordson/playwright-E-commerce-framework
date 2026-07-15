@@ -21,6 +21,11 @@ pipeline {
                 bat 'curl https://www.saucedemo.com'
             }
         }
+        stage('Open Chromium') {
+    steps {
+        bat 'npx playwright open https://www.saucedemo.com'
+    }
+}
 
         stage('Run Playwright Tests') {
             steps {
